@@ -212,6 +212,9 @@ int main (int argc, char** argv)
 	 double VB = h_bg->GetRMS(); 
 	 double VT = h_signal->GetRMS(); 
 
+	 VB = VB*VB;
+	 VT = VT*VT;
+	      
 	 int n_point=0;
 	 int max_point=0;
 	 double max_lambda=0;
