@@ -3,8 +3,10 @@ import ROOT
 
 ### hax ###
 import hax
-hax.init(raw_data_access_mode = 'local',raw_data_local_path = '/project2/lgrandi/xenon1t/raw/')
-
+hax.init(raw_data_access_mode = 'local',
+         raw_data_local_path = ['/project/lgrandi/xenon1t/raw/',
+                                '/project2/lgrandi/xenon1t/raw/', 
+                                '/home/kazama/scratch-midway/raw/'])
 import sys
 argvs = sys.argv
 
