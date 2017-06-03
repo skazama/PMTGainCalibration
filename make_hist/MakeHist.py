@@ -23,7 +23,7 @@ info = hax.runs.get_run_info(my_dataset)
 time = info['trigger']['start_timestamp']
 
 #n_events = int(subdataset.iloc[0]['trigger__events_built'])
-n_events = 190000
+n_events = 184000
 
 output = subdataset.iloc[0]['name']
 outputfile = output + "_" + argvs[3] + ".root"
