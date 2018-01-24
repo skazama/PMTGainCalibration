@@ -64,7 +64,7 @@ do
                 echo "source activate pax_head"                                    >> ${batch_dir}/gain_calib_${filename}.sh
 
                 echo "host=\`hostname | sed -e \"s/-/ /\" | awk '{print \$1}'\`"   >> ${batch_dir}/gain_calib_${filename}.sh
-                echo "scratch=\"/scratch/\${host}/kazama/qjob\""                   >> ${batch_dir}/gain_calib_${filename}.sh
+                echo "scratch=\"/scratch/\${host}/${USER}/qjob\""                  >> ${batch_dir}/gain_calib_${filename}.sh
 
                 echo "mkdir -p \${scratch}/${today}"                               >> ${batch_dir}/gain_calib_${filename}.sh
                 echo "mkdir -p \${scratch}/${today}/${filename}"                   >> ${batch_dir}/gain_calib_${filename}.sh
